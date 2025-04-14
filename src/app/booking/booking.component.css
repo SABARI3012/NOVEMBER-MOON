@@ -1,0 +1,12 @@
+img:hover{
+    border:3px solid black;
+    box-shadow: 1px 10px 30px black;
+}
+h2{
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    margin-top: 3px;
+    text-align: center;
+}

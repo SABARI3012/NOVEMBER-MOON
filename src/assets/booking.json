@@ -1,0 +1,14 @@
+[
+    {
+      "name": "John Doe",
+      "date": "2024-02-25",
+      "time": "18:00",
+      "members": 2,
+      "tiningType": "Couple Tining"
+    }
+  ]
+
+[
+  "src/favicon.ico",
+  "src/assets"
+],

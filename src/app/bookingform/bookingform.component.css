@@ -1,0 +1,14 @@
+section{
+    width:70%;
+    height: 600px;;
+    margin-left: 15%;
+    margin-top: 10px;
+    border:2px grey solid;
+}
+h2{
+    margin-top: 25px;
+    text-align: center;
+}
+form{
+    margin:40px;
+}

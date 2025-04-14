@@ -1,0 +1,60 @@
+<section>
+  <h2>Booking Form</h2>
+<form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input id="name" formControlName="name" class="form-control" />
+    <div *ngIf="submitted && bookingForm.get('name')?.errors" class="text-danger">
+      Name is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="mobile">Mobile</label>
+    <input id="mobile" formControlName="mobile" class="form-control" />
+    <div *ngIf="submitted && bookingForm.get('mobile')?.errors" class="text-danger">
+      <span *ngIf="bookingForm.get('mobile')?.errors?.['required']">Mobile number is required.</span>
+      <span *ngIf="bookingForm.get('mobile')?.errors?.['pattern']">Invalid mobile number.</span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="members">Number of Members</label>
+    <input id="members" formControlName="members" type="number" class="form-control" />
+    <div *ngIf="submitted && bookingForm.get('members')?.errors" class="text-danger">
+      Number of members is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="date">Date</label>
+    <input id="date" type="date" formControlName="date" class="form-control" />
+    <div *ngIf="submitted && bookingForm.get('date')?.errors" class="text-danger">
+      Date is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="time">Time</label>
+    <input id="time" type="time" formControlName="time" class="form-control" />
+    <div *ngIf="submitted && bookingForm.get('time')?.errors" class="text-danger">
+      Time is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="diningType">Dining Type</label>
+    <select id="diningType" formControlName="diningType" class="form-control">
+      <option value="">Select Dining Type</option>
+      <option value="Couple Dining">Couple Dining</option>
+      <option value="Family Dining">Family Dining</option>
+      <option value="Party Dining">Party Dining</option>
+    </select>
+    <div *ngIf="submitted && bookingForm.get('diningType')?.errors" class="text-danger">
+      Dining type is required.
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="bookingForm.invalid">Book Now</button>
+</form>
+</section>

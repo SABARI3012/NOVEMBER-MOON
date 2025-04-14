@@ -1,0 +1,31 @@
+{
+  "bookings": [
+    {
+      "id": "bfa3",
+      "name": "sabari",
+      "mobile": "9361553595",
+      "members": 5,
+      "date": "2025-02-27",
+      "time": "15:30",
+      "diningType": "Family Dining"
+    },
+    {
+      "id": "9fe7",
+      "name": "sabari",
+      "mobile": "9361553595",
+      "members": 5,
+      "date": "2025-02-27",
+      "time": "03:00",
+      "diningType": "Family Dining"
+    },
+    {
+      "id": "fd13",
+      "name": "selvan",
+      "mobile": "9876543212",
+      "members": 2,
+      "date": "2025-02-14",
+      "time": "17:03",
+      "diningType": "Couple Dining"
+    }
+  ]
+}
